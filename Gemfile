@@ -5,6 +5,12 @@ ruby "3.0.3"
 
 gem "rails", "~> 7.0.2", ">= 7.0.2.4"
 
+gem 'twitter-bootstrap-rails'
+
+gem 'jquery-rails'
+gem 'rails-ujs'
+gem 'turbolinks'
+
 gem "sprockets-rails"
 
 gem "puma", "~> 5.0"
