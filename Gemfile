@@ -28,10 +28,8 @@ gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 gem "bootsnap", require: false
+gem 'pg'
 
-group :production do
-  gem 'pg'
-end
 
 group :development, :test do
   gem "sqlite3", "~> 1.4"
