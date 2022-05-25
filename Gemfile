@@ -5,6 +5,8 @@ ruby "3.0.3"
 
 gem "rails", "~> 7.0.2", ">= 7.0.2.4"
 
+gem 'devise'
+
 gem 'twitter-bootstrap-rails'
 
 gem 'jquery-rails'
@@ -35,4 +37,3 @@ end
 group :development do
   gem "web-console"
 end
-
