@@ -10,6 +10,7 @@ gem 'devise-i18n'
 gem "russian"
 
 gem 'twitter-bootstrap-rails'
+gem "font-awesome-rails"
 
 gem 'jquery-rails'
 gem 'rails-ujs'

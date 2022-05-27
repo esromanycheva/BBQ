@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!, exept: [:show]
-  before_action :set_current_user, exept: [:show]
+  before_action :authenticate_user!, except: [:show]
+  before_action :set_current_user, except: [:show]
 
   # GET /users/1 or /users/1.json
   def show
