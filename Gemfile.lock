@@ -261,6 +261,7 @@ DEPENDENCIES
   devise
   devise-i18n
   font-awesome-rails
+  image_processing (>= 1.2)
   importmap-rails
   jbuilder
   jquery-rails
