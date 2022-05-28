@@ -16,6 +16,9 @@ gem 'jquery-rails'
 gem 'rails-ujs'
 gem 'turbolinks'
 
+gem 'carrierwave'
+gem 'rmagick'
+
 gem "sprockets-rails"
 
 gem "puma", "~> 5.0"
