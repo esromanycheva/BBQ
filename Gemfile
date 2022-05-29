@@ -5,6 +5,9 @@ ruby "3.0.3"
 
 gem "rails", "~> 7.0.2", ">= 7.0.2.4"
 
+gem 'aws-sdk-s3'
+gem "image_processing", ">= 1.2"
+
 gem 'devise'
 gem 'devise-i18n'
 gem "russian"
@@ -18,6 +21,7 @@ gem 'turbolinks'
 
 gem 'carrierwave'
 gem 'rmagick'
+gem 'fog-aws'
 
 gem "sprockets-rails"
 
@@ -35,8 +39,6 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 gem "bootsnap", require: false
 gem 'pg'
-
-gem "image_processing", ">= 1.2"
 
 
 group :development, :test do

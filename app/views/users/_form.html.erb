@@ -14,8 +14,8 @@
 
   <div class="form-group">
     <%= f.label :avatar %>
-    <p><%= image_tag(@user.avatar.thumb.url) if @user.avatar? %></p>
-    <%= f.file_field :avatar %>
+    <p><%= image_tag(user_avatar_thumb(@user)) %></p>
+    <%= f.file_field :avatar, class: 'form-control' %>
   </div>
 
   <div class="actions">
