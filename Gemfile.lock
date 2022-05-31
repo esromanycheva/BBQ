@@ -161,6 +161,8 @@ GEM
       actionpack (>= 4)
       less (~> 2.6.0)
       sprockets (>= 2)
+    libv8 (3.16.14.19)
+    libv8 (3.16.14.19-x86_64-linux)
     loofah (2.18.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -237,6 +239,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
+    ref (2.0.0)
     reline (0.3.1)
       io-console (~> 0.5)
     responders (3.0.1)
@@ -259,6 +262,9 @@ GEM
     stimulus-rails (1.0.4)
       railties (>= 6.0.0)
     strscan (3.0.3)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
     thor (1.2.1)
     timeout (0.2.0)
     turbo-rails (1.1.1)
@@ -314,6 +320,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
+  therubyracer
   turbo-rails
   turbolinks
   twitter-bootstrap-rails

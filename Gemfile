@@ -22,6 +22,7 @@ gem 'turbolinks'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
+gem 'therubyracer'
 
 gem "sprockets-rails"
 

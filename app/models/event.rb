@@ -6,7 +6,6 @@ class Event < ApplicationRecord
   has_many :subscriptions
   has_many :subscribers, through: :subscriptions, source: :user
   has_many :photos
-  # has_many_attached :photos
 
   validates :user, presence: true
 
@@ -16,5 +15,9 @@ class Event < ApplicationRecord
 
   def visitors
     (subscribers + [user]).uniq
+  end
+
+  def pincode_valid?(pin2chek)
+    pincode == pin2chek
   end
 end
