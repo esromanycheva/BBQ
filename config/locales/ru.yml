@@ -1,4 +1,11 @@
 ru:
+  events:
+    show:
+      i_am_ready: 'Я пойду'
+      edit: 'Изменить'
+      destroy: 'Удалить'
+      destroy_confirm: 'Вы уверены, что хотите удалить событие?'
+
   device:
     log_in: 'Войти'
     sign_up: 'Зарегистрироваться'
