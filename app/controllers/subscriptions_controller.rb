@@ -1,6 +1,7 @@
 class SubscriptionsController < ApplicationController
   before_action :set_event, only: [:create, :destroy]
   before_action :set_subscription, only: [:destroy]
+  before_action :check_disabled_email, only: [:create]
 
   def create
     @new_subscription = @event.subscriptions.build(subscription_params)
@@ -27,6 +28,13 @@ class SubscriptionsController < ApplicationController
   end
 
   private
+
+  def check_disabled_email
+    if current_user.nil? && User.find_by(email: subscription_params[:user_email])
+      redirect_to @event, alert: I18n.t('controllers.subscriptions.error')
+    end
+  end
+
   def set_subscription
     @subscription = @event.subscriptions.find(params[:id])
   end
