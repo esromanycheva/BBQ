@@ -70,7 +70,9 @@
       <div class="event-subscription-form">
         <h4><%= t('.i_am_ready') %></h4>
         <div>
-          <%= render partial: 'subscriptions/form', locals: { subscription: @new_subscription || @event.subscriptions.build } %>
+          <%- if show_subscription_button? %>
+            <%= render partial: 'subscriptions/form', locals: { subscription: @new_subscription || @event.subscriptions.build } %>
+          <% end %>
         </div>
       </div>
     </div>
