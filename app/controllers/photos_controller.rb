@@ -38,6 +38,6 @@ class PhotosController < ApplicationController
   end
 
   def photo_params
-    params.fetch(:photo, {}).permit(:photo)
+    params.fetch(:photo, {}).permit(:photo_image)
   end
 end

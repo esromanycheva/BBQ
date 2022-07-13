@@ -5,7 +5,7 @@ class Event < ApplicationRecord
   has_many :comments
   has_many :subscriptions
   has_many :subscribers, through: :subscriptions, source: :user
-  has_many :photos
+  has_many :photos, dependent: :destroy
 
   validates :user, presence: true
 

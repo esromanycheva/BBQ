@@ -1,15 +1,15 @@
 module ApplicationHelper
   def user_avatar(user)
-    if user.avatar.attached?
-      user.avatar
+    if user.avatar_image.attached?
+      user.avatar_image
     else
       asset_path('user.png')
     end
   end
 
   def user_avatar_thumb(user)
-    if user.avatar.attached?
-      user.avatar.variant(resize: "200x200!")
+    if user.avatar_image.attached?
+      user.avatar_image.variant(resize: "200x200!")
     else
       asset_path('user.png')
     end
@@ -19,7 +19,7 @@ module ApplicationHelper
     photos = event.photos.persisted
 
     if photos.any?
-      photos.sample.photo.url
+      rails_blob_path(photos.sample.photo_image, only_path: true)
     else
       asset_path('event.jpg')
     end
@@ -29,7 +29,7 @@ module ApplicationHelper
     photos = event.photos.persisted
 
     if photos.any?
-      photos.sample.photo.thumb.url
+      photos.sample.photo_image.thumb.url
     else
       asset_path('event_thumb.jpg')
     end

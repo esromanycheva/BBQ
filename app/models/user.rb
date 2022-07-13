@@ -10,7 +10,7 @@ class User < ApplicationRecord
 
   after_commit :link_subscriptions, on: :create
 
-  has_one_attached :avatar, service: :yandex
+  has_one_attached :avatar_image, service: :yandex
 
   private
 
